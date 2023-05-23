@@ -1,2 +1,5 @@
-# rust-examples
-examples in Rust
+# run benchmarks
+
+```bash
+cargo bench
+```
