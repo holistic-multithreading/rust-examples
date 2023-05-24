@@ -21,8 +21,7 @@ pub fn count_sum_multithreaded(range: usize) -> usize {
             let start = chunk_size * i + 1;
             let mut end = start + chunk_size;
             if i + 1 == cpu_count {
-                let remaining = range - (chunk_size * cpu_count);
-                end += remaining;
+                end = range;
             }
             let mut sum = 0;
             for i in start..end {
